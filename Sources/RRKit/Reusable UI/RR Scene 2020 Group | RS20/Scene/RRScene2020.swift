@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class RRScene2020: UIViewController {
+open class RRScene2020: UIViewController {
     
     // MARK: Properties
     
@@ -14,7 +14,7 @@ public class RRScene2020: UIViewController {
 
     // MARK: Life cycle
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         attachView()

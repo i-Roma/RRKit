@@ -28,11 +28,11 @@ open class RS20View: UIView {
     
     // MARK: Life cycle
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError(aDecoder.error.debugDescription)
     }
     
-    override init(frame: CGRect) {
+    open override init(frame: CGRect) {
         super.init(frame: frame)
         
         settings()
@@ -43,7 +43,7 @@ open class RS20View: UIView {
         self.init(frame: .zero)
     }
     
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         setScrollContentSize()
@@ -156,7 +156,7 @@ open class RS20View: UIView {
 
 extension RS20View: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
                 
         let height = header.frame.height - scrollView.contentOffset.y
         let scaleY = height / header.frame.height
