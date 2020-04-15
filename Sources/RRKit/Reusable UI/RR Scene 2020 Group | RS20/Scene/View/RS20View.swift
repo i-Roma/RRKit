@@ -6,7 +6,7 @@
 
 import UIKit
 
-class RS20View: UIView {
+open class RS20View: UIView {
     
     // MARK: Properties
     

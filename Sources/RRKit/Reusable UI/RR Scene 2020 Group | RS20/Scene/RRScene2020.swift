@@ -6,7 +6,7 @@
 
 import UIKit
 
-class RRScene2020: UIViewController {
+public class RRScene2020: UIViewController {
     
     // MARK: Properties
     
